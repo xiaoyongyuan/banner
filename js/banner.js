@@ -34,12 +34,12 @@ $(function () {
     $(".container").hover(function(){
         $(".next,.prev").animate({
             "opacity":1,
-        },1000);
+        },300);
         clearInterval(timer);
     },function(){
         $(".next,.prev").animate({
             "opacity":0.5,
-        },1000);
+        },500);
         timer = setInterval(function (){
             sw++;
             if(sw==number.length){sw=0};
